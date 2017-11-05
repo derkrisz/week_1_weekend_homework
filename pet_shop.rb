@@ -41,3 +41,11 @@ result_name = nil
   end
   return result_name
 end
+
+def remove_pet_by_name(pet_shop, name)
+  for pet in pet_shop[:pets]
+    if pet[:name] == name
+      pet_shop[:pets].delete(pet)  #test passes but not sure if good
+    end
+  end
+end
