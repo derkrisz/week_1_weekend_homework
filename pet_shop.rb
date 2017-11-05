@@ -11,5 +11,9 @@ def add_or_remove_cash(pet_shop, amount)
 end
 
 def pets_sold(pet_shop)
-  pet_shop[:admin][:pets_sold]
+  return pet_shop[:admin][:pets_sold]
+end
+
+def increase_pets_sold(pet_shop, num)
+  return pet_shop[:admin][:pets_sold] += num #maybe call the pets_sold method??
 end
